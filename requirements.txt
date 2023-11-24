@@ -1,0 +1,7 @@
+langchain
+unstructured
+pinecone-client
+python-dotenv
+sentence_transformers
+streamlit
+requests

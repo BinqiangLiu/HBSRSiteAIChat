@@ -26,12 +26,12 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="Website AI Chat Assistant - Open Source", layout="wide")
-st.subheader("Website AI Chat Assistant")
-
+st.set_page_config(page_title="Website AI Chat Assistant - Open Source Version", layout="wide")
+st.subheader("Welcome to Open Website AI Chat Assistant Life Enhancing with AI!")
+st.write("Important notice: This Open Website AI Chat Assistant is offered for information and study purpose only and by no means for any other use. Any user should never interact with the AI Assistant in any way that is against any related promulgated regulations. The user is the only entity responsible for interactions taken between the user and the AI Chat Assistant.")
 css_file = "main.css"
 with open(css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)  
 
 HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
 model_name = os.getenv('model_name')
